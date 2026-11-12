@@ -165,6 +165,8 @@ plays E1M1 headlessly.
 
 ## Credits and licenses
 
+In short: **MIT for the small games and tools, GPL-2.0-or-later for Doom.**
+
 - **Doom** is by id Software. The portable source is
   [doomgeneric](https://github.com/ozkl/doomgeneric) (ozkl), based on
   Chocolate Doom (Simon Howard) and the original Doom source release. It is
@@ -173,6 +175,10 @@ plays E1M1 headlessly.
   The Doom game data (WAD) is not included and is not covered by that license.
 - The calculator toolchain is [fxSDK and gint](https://gitea.planet-casio.fr/Lephenixnoir/fxsdk)
   by Lephenixnoir and the Planète Casio community.
-- The 8 small games are original code written for this repository. Their license
-  has not been chosen yet; until a `LICENSE` file is added at the top level, all
-  rights are reserved by the repository owner.
+- Everything **outside `games/doom/`** (the 8 small games, the shared toolkit,
+  the test harness and tools) is original code under the **MIT License**; see
+  [`LICENSE`](LICENSE). It is free to use, change and share, including in
+  commercial projects, as long as the copyright notice is kept.
+- **`games/doom/` is GPL-2.0-or-later**, because Doom's source is. If you
+  distribute a built `Doom.g3a`, you must also make its source available under
+  the same terms.

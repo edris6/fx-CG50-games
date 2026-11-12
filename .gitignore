@@ -6,3 +6,6 @@ build/
 *.WAD
 .DS_Store
 build-host/
+build-host/
+*.o
+*.ppm

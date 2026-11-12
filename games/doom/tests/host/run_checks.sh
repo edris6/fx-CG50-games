@@ -15,8 +15,8 @@ cc -w -I"$ROOT/src/doom" "$HERE/check_keys.c" -o "$TMP/ck" && "$TMP/ck"
 
 if [ -n "$1" ]; then
   # Menu: ESC, New Game, episode, skill -> then walk forward and shoot.
-  DOOM_KEYS="40:EXIT:1,45:EXIT:0,60:EXE:1,65:EXE:0,100:EXE:1,105:EXE:0,140:EXE:1,145:EXE:0,400:UP:1,800:UP:0,820:EXE:1,825:EXE:0" \
-  DOOM_HOST_DIR="$1" DOOM_FRAMES=900 DOOM_OUT="$TMP" DOOM_DUMP=899 \
+  HOST_KEYS="40:EXIT:1,45:EXIT:0,60:EXE:1,65:EXE:0,100:EXE:1,105:EXE:0,140:EXE:1,145:EXE:0,400:UP:1,800:UP:0,820:EXE:1,825:EXE:0" \
+  HOST_DIR="$1" HOST_FRAMES=900 HOST_OUT="$TMP" HOST_DUMP=899 \
     "$TMP/out/doom-host" > "$TMP/log.txt" 2>&1 || true
   grep -q "reached 900 frames" "$TMP/log.txt" && echo "engine boot + 900 frames OK" || { tail -20 "$TMP/log.txt"; exit 1; }
 fi

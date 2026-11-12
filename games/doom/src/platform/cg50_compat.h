@@ -30,7 +30,6 @@ int cg_system(const char *cmd);
 int cg_strcasecmp(const char *a, const char *b);
 int cg_strncasecmp(const char *a, const char *b, size_t n);
 char *cg_strdup(const char *s);
-int cg_sscanf_int(const char *s, const char *fmt, ...);
 double cg_atof(const char *s);
 char *cg_getenv(const char *name);
 

@@ -6,9 +6,6 @@
 #define CG50_NO_REMAP
 #include "cg50_compat.h"
 
-#include <gint/gint.h>
-#include <gint/display.h>
-
 #include "cg50_platform.h"
 #include "doomgeneric.h"
 

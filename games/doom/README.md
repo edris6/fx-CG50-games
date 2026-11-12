@@ -114,8 +114,8 @@ I wrote against gint from memory. If the build fails, look here first:
 
 `tests/host/run_checks.sh [dir-with-DOOM1.WAD]` verifies the key constants,
 compiles and links the entire port against stub gint headers, and (with a WAD)
-boots the engine headlessly. Dump frames with `DOOM_DUMP=10,200` and script
-key presses with `DOOM_KEYS="40:EXIT:1,45:EXIT:0"`; see `tests/host/host_gint.c`.
+boots the engine headlessly. Dump frames with `HOST_DUMP=10,200` and script
+key presses with `HOST_KEYS="40:EXIT:1,45:EXIT:0"`; see `common/host/host_gint.c`.
 
 ## License
 

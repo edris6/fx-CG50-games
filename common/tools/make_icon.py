@@ -91,7 +91,7 @@ def main():
     os.makedirs(a.outdir, exist_ok=True)
     w, h, px = render(a.text.upper(), accent, dark)
     png(os.path.join(a.outdir, "icon-uns.png"), w, h, px)
-    w, h, px = render(a.text.upper(), dark, accent if False else light)
+    w, h, px = render(a.text.upper(), dark, light)
     png(os.path.join(a.outdir, "icon-sel.png"), w, h, px)
 
 

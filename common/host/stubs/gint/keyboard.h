@@ -1,0 +1,9 @@
+#pragma once
+enum { KEY_F1 = 1, KEY_F2, KEY_F3, KEY_F4, KEY_F5, KEY_F6, KEY_SHIFT, KEY_OPTN,
+  KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT, KEY_EXIT, KEY_ALPHA, KEY_DEL, KEY_EXE,
+  KEY_ADD, KEY_SUB, KEY_0, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7,
+  KEY_8, KEY_9, KEY_MUL, KEY_DIV, KEY_DOT, KEY_XOT, KEY_LOG, KEY_LN, KEY_SIN,
+  KEY_COS, KEY_TAN, KEY_VARS };
+void clearevents(void);
+int keydown(int key);
+int getkey(void);

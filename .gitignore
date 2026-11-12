@@ -1,0 +1,8 @@
+build-cg/
+build-fx/
+build/
+*.g3a
+*.wad
+*.WAD
+.DS_Store
+build-host/
